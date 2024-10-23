@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { roboto, crimson_text } from '../constants/fonts'
 import "./globals.css";
 import HamburgerMenu from '../components/hamburgerMenu'
+import Footer from '../components/footer'
 
 
 
@@ -26,7 +27,7 @@ export default function RootLayout({
           </div>
           </header>
           <main >{children}</main>
-          <footer>Footer Area</footer>
+          <footer><Footer></Footer></footer>
         </body>
       </html>
     )
