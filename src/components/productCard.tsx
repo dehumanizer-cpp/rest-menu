@@ -13,15 +13,15 @@ interface MenuProductProps {
 export default function ProductCard(props:MenuProductProps) {
   return (
     <section className="mb-12">
-      <h2 className="text-3xl font-semibold text-gray-800 mb-4">{props.title}</h2>
+      <h2 className="text-3xl font-normal text-gray-800 mb-4">{props.title}</h2>
       <ul className="space-y-4">
           <li className="bg-white p-4 rounded shadow">
-              <h3 className="text-xl font-bold">{props.firstProductTitle}</h3>
-              <p className="text-gray-600">{props.firstProductDesc}</p>
+              <h3 className="text-xl font-extrabold tracking-widest font-crimson-text text-gray-800 ">{props.firstProductTitle}</h3>
+              <p className="text-gray-600 font-roboto italic">{props.firstProductDesc}</p>
           </li>
           <li className="bg-white p-4 rounded shadow">
-              <h3 className="text-xl font-bold">{props.secondProductTitle}</h3>
-              <p className="text-gray-600">{props.secondProductDesc}</p>
+              <h3 className="text-xl font-extrabold tracking-widest font-crimson-text text-gray-800">{props.secondProductTitle}</h3>
+              <p className="text-gray-600 font-roboto italic">{props.secondProductDesc}</p>
           </li>
       </ul>
     </section>

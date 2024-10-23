@@ -8,6 +8,10 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	fontFamily: {
+		"roboto": "var(--roboto-font)",
+		"crimson-text": "var(--crimson-text-font)"
+	},
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
@@ -58,6 +62,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [],
 };
 export default config;

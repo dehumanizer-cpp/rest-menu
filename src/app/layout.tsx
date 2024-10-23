@@ -1,5 +1,9 @@
 import type { Metadata } from "next";
+import { roboto, crimson_text } from '../constants/fonts'
 import "./globals.css";
+import HamburgerMenu from '../components/hamburgerMenu'
+
+
 
 export const metadata : Metadata = {
     title: 'rest-menu-app',
@@ -11,11 +15,18 @@ export default function RootLayout({
   }: {
     children: React.ReactNode
   }) {
+    
     return (
-      <html lang="en">
+      <html lang="en" className={`${roboto.variable} ${crimson_text.variable}`}>
         <body>
-          {/* Layout UI */}
-          <main>{children}</main>
+
+          <header>
+          <div className=" bg-gray-100 flex flex-col md:flex-row items-center justify-center">
+            <HamburgerMenu />
+          </div>
+          </header>
+          <main >{children}</main>
+          <footer>Footer Area</footer>
         </body>
       </html>
     )
